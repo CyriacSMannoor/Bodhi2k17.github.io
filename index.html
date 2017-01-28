@@ -11,6 +11,7 @@
   		.carousel-inner > .item > img,
   		.carousel-inner > .item > a > img {
       		width: 100%;
+      		vertical-align: text-bottom;
   		}
   	</style>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -36,19 +37,26 @@
 
 
 <body>
-	<div class="container-fluid" style="background-color:#F44336;color:#fff;height:75px;">
-  			<h1 align="center">Bodhi 2k17</h1>
-		</div>
-		
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Bodhi 2k17</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	<div class="jumbotron">
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  		<ul class="nav navbar-nav">
-    		<li class="active"><a href="#">BODHI 2k17</a></li>
-    		<li><a href="#">home</a></li>
-    		<li><a href="#">about</a></li>
-    		<li><a href="#">contact</a></li>
-  		</ul>
-		</nav>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
   		<!-- Indicators -->
 	  	<ol class="carousel-indicators">
@@ -84,9 +92,7 @@
 	    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	    	<span class="sr-only">Next</span>
 	  	</a>
-		<div class="container-fluid" style="height:20px">
-		  <h1></h1>
-		</div>
+		
 		</div>
 </div>
 </div>
