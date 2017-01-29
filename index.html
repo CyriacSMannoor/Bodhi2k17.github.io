@@ -10,15 +10,25 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Kreon" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
 	<style>
+	a:link {
+		color: #f4511e !important;
+	}
+	a:visited {
+	    color: #f45110;
+	}
+	a:hover {
+	    color: #f45120;
+	}
+	a:active {
+	    color: #f45130;
+	}
 	.carousel-inner > .item > img,
 	.carousel-inner > .item > a > img {
-	  	/*width: 100%;
-	   	vertical-align: text-top;
-	   	width:640px;*/
-	   	margin: 0 auto;
-       height:360px;
+	   margin: 0 auto;
+       height:400px;
 	}
 	.affix {
 	    top: 0;
@@ -26,17 +36,17 @@
 	    -webkit-transition: all .5s ease-in-out;
 	    transition: all .5s ease-in-out;
 	}
-	.affix-top {
+	?/*affix-top {
 	    position: static;
 	    top: -35px;
 	}
 	.affix + .container-fluid {
 	    padding-top: 70px;
-	}
+	}*/
 	.jumbotron {
 	    background-color: #A9A9A9;
 	    color: #fff;
-	    font-family: Montserrat, sans-serif;
+	    font-family: 'Kreon', serif;
 	    max-height: 1000px
 	}
 	.navbar {
@@ -48,7 +58,7 @@
 	    line-height: 1.42857143 !important;
 	    letter-spacing: 4px;
 	    border-radius: 0;
-	    font-family: Montserrat, sans-serif;
+	    font-family: 'Kreon', serif;
 	}
 	.navbar li a, .navbar .navbar-brand {
 	    color: #fff !important;
@@ -59,6 +69,21 @@
 	}
 	.container-fluid{
 		color: #f4511e !important;
+	}
+	.footer-font{
+		font-family: 'Cookie', cursive;
+		color: #f4511e !important;
+	}
+	.footer{
+		font-family: 'Great Vibes', cursive;
+		color: #f4511e !important;
+		font-size: 18px
+	}
+	.new-style-bodhi{
+		font-family: 'Rock Salt', cursive;
+		color: #000 !important
+		text-shadow: 10px 15px #ff0000;
+		text-align: center;
 	}
   	</style>
   	<link rel="shortcut icon" type="image/x-icon" href="./images/blah.jpeg" />
@@ -84,8 +109,11 @@
     </div>
   </div>
 </nav>
-	<div class="jumbotron text-bottom">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="jumbotron text-bottom">
+	<div class="new-style-bodhi">
+		<h3>Bodhi2k17</h3>
+	</div>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
   		<!-- Indicators -->
 	  	<ol class="carousel-indicators">
 	    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -96,13 +124,10 @@
 	  	<div class="carousel-inner" role="listbox">
 	      <div class="item active">
 	      <img src="./images/comingsoon.png" alt="bodhi">
-	      <div class="carousel-caption">
-	        <h3><font color="blue">Bodhi2k17</font></h3>
-	        <p><font color="blue">
-	        	February 17, 18 
-	        	</font>
-	        </p>
-	      </div>
+	      <!--<div class="carousel-caption">
+	        <h3 class="new-style-bodhi">Bodhi2k17</h3>
+	        <p class="new-style-bodhi">February 17, 18</p>
+	      </div>-->
 	    </div>
 
     	<div class="item">
@@ -123,12 +148,16 @@
 		
 		</div>
 	</div>
+	<div class="new-style-bodhi">
+	    <p>February 17, 18</p>
+	</div>
 </div>
 <footer class="container-fluid text-center">
-	<div class="container" align="center">
-  		<p align="center">Made with ❤ by Soolu Thomas</p>
-  		<a href="https://www.google.com/+SooluThomas" target="_blank"><img src="./images/gp.png" alt="GooluPlus" height="50" width="50"></a>
-  		<a href="https://www.facebook.com/+SooluThomas" target="_blank"><img src="./images/fb.png" alt="Facebook" height="60" width="60"></a>
+	<div class="footer">
+  		<p align="center">Praise to the Almighty</p>
+  	</div>
+  	<div class="footer-font">
+  		<a href="https://www.facebook.com/SooluThomas" target="_blank">Made with ❤ by Soolu Thomas</a>
   	</div>
 </footer>
 </body>
