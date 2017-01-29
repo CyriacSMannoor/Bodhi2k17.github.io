@@ -3,7 +3,7 @@
 <head>
 	<title>BODHI 2k17</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,10 +24,30 @@
 	a:active {
 	    color: #f45130;
 	}
+	body {
+      	font: 400 15px Lato, sans-serif;
+      	line-height: 1.8;
+      	color: #818181;
+  	}
+  	h2 {
+      	font-size: 24px;
+      	text-transform: uppercase;
+      	color: #303030;
+      	font-weight: 600;
+      	margin-bottom: 30px;
+  	}
+  	h4 {
+      	font-size: 19px;
+      	line-height: 1.375em;
+      	color: #303030;
+      	font-weight: 400;
+      	margin-bottom: 30px;
+  	}
 	.carousel-inner > .item > img,
 	.carousel-inner > .item > a > img {
 	   margin: 0 auto;
        height:400px;
+       width: auto;
 	}
 	.affix {
 	    top: 0;
@@ -35,19 +55,25 @@
 	    -webkit-transition: all .5s ease-in-out;
 	    transition: all .5s ease-in-out;
 	}
-	?/*affix-top {
+	.affix-top {
 	    position: static;
 	    top: -35px;
 	}
 	.affix + .container-fluid {
 	    padding-top: 70px;
-	}*/
+	}
 	.jumbotron {
-	    background-color: #A9A9A9;
+	    background-color: #C0C0C0 ;
 	    color: #fff;
 	    font-family: 'Kreon', serif;
-	    max-height: 1000px
+	    max-height: 550px;
+	    padding-top: 100px
 	}
+	.glyphicon {
+      	font-size: 20px;
+      	margin-bottom: 20px;
+      	color: #f4511e;
+  	}
 	.navbar {
 	    margin-bottom: 0;
 	    background-color: #f4511e;
@@ -80,84 +106,153 @@
 	}
 	.new-style-bodhi{
 		font-family: 'Rock Salt', cursive;
-		color: #000 !important
+		color: #000000 !important
 		text-shadow: 10px 15px #ff0000;
-		text-align: center;
+		text-align: left;
 	}
+	.slideanim {visibility:hidden;}
+  	.slide {
+      	animation-name: slide;
+        -webkit-animation-name: slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+      	visibility: visible;
+  	}
+  	@keyframes slide {
+    	0% {
+      		opacity: 0;
+      		transform: translateY(70%);
+    	} 	
+    	100% {
+      		opacity: 1;
+      		transform: translateY(0%);
+    	}
+  	}
+  	@-webkit-keyframes slide {
+    	0% {
+      		opacity: 0;
+            -webkit-transform: translateY(70%);
+    	} 
+    	100% {
+      		opacity: 1;
+            -webkit-transform: translateY(0%);
+    	}
+  	}
+  	@media screen and (max-width: 768px) {
+    	.col-sm-4 {
+      		text-align: center;
+      		margin: 25px 0;
+    	}
+    	.btn-lg {
+        	width: 100%;
+        	margin-bottom: 35px;
+    	}
+  	}
+  	@media screen and (max-width: 480px) {
+    	.logo {
+        	font-size: 150px;
+    	}
+  	}
   	</style>
   	<link rel="shortcut icon" type="image/x-icon" href="./images/blah.jpeg" />
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Bodhi 2k17</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="jumbotron text-bottom">
-	<div class="new-style-bodhi">
-		<h3>Bodhi2k17</h3>
-	</div>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-	  	<ol class="carousel-indicators">
-	    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	    	<li data-target="#myCarousel" data-slide-to="1"></li>
-	    </ol>
+  	<nav class="navbar navbar-default navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      			</button>
+      			<a class="navbar-brand" href="#head">Bodhi 2k17</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class="active"><a href="#Home">Home</a></li>
+        			<li><a href="#About">About</a></li>
+        			<li><a href="#Events">Events</a></li>
+        			<li><a href="#Contact">Contact</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
 
-	  	<!-- Wrapper for slides -->
-	  	<div class="carousel-inner" role="listbox">
-	      <div class="item active">
-	      <img src="./images/comingsoon.png" alt="bodhi">
-	      <!--<div class="carousel-caption">
-	        <h3 class="new-style-bodhi">Bodhi2k17</h3>
-	        <p class="new-style-bodhi">February 17, 18</p>
-	      </div>-->
-	    </div>
 
-    	<div class="item">
-    	<img src="./images/vjcet.jpg" alt="college">
-      	<div class="carousel-caption">
-        </div>
-    	</div>
-
-	  	<!-- Left and right controls -->
-	  	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    	<span class="sr-only">Previous</span>
-	  	</a>
-	  	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    	<span class="sr-only">Next</span>
-	  	</a>
-		
+	<div class="jumbotron text-center">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  		<ol class="carousel-indicators">
+	    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    		<li data-target="#myCarousel" data-slide-to="1"></li>
+	    	</ol>
+		  	<div class="carousel-inner" role="listbox">
+	    	  	<div class="item active">
+	      			<img src="./images/BodhiOrange.png" alt="bodhi">
+	    		</div>
+	    		<div class="item">
+    				<img src="./images/vjcet.jpg" alt="college">
+    			</div>
+    			
+	    	</div>
+		  	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    		<span class="sr-only">Previous</span>
+	  		</a>
+	  		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    		<span class="sr-only">Next</span>
+	  		</a>
 		</div>
 	</div>
-	<div class="new-style-bodhi">
-	    <p>February 17, 18</p>
+
+
+	<div id="About" class="container-fluid">
+  		<div class="row">
+    		<div class="col-sm-8">
+      			<h2>About the College</h2><br>
+      			<p>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity' is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering & Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. With 90 schools, 3 affiliated Colleges and 3 other technical institutions under its Management, Kothamangalam Diocese always have been in the forefront in serving the society and the cause of education for the last 5 decades. Behind each of its famed educational institutions, are the unflagging efforts of the people of the Diocese.</p>
+    		</div>
+    		<div class="col-sm-4">
+    			<span class="glyphicons glyphicons-bank"></span>  
+    		</div>
+  		</div>
 	</div>
-</div>
-<footer class="container-fluid text-center">
-	<div class="footer">
-  		<p align="center">Praise to the Almighty</p>
-  	</div>
-  	<div class="footer-font">
-  		<a href="https://www.facebook.com/SooluThomas" target="_blank">Made with ❤ by Soolu Thomas</a>
-  	</div>
-</footer>
+
+	<footer class="container-fluid text-center">
+		<div class="footer">
+  			<p align="center">Praise to the Almighty</p>
+  		</div>
+  		<div class="footer-font">
+  			<a href="https://www.facebook.com/SooluThomas" target="_blank">Made with ❤ by Soolu Thomas</a>
+  		</div>
+	</footer>
+
+	<script>
+		$(document).ready(function(){
+  			$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    		if (this.hash !== "") {
+      			event.preventDefault();
+      			var hash = this.hash;
+			$('html, body').animate({
+        		scrollTop: $(hash).offset().top
+    	  		}, 900, function(){
+        			window.location.hash = hash;
+      			});
+    		} // End if
+  			});
+   			$(window).scroll(function() {
+    			$(".slideanim").each(function(){
+      				var pos = $(this).offset().top;
+      				var winTop = $(window).scrollTop();
+        			if (pos < winTop + 600) {
+          			$(this).addClass("slide");
+        			}
+    			});
+  			});
+		})
+	</script>
+
+
 </body>
 </html>
