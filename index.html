@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="animate.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,6 +13,13 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Luckiest+Guy|Rock+Salt|Kreon" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Acme|Noticia+Text" rel="stylesheet">
+	<script>
+		
+		$(function () {
+    	$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+		});
+
+	</script>
 	
 	<style>
 	a:link {
@@ -94,7 +102,6 @@
 	.navbar-nav li a:hover, .navbar-nav li.active a {
 	    color: #000000 !important;
 	    background-color: #fff !important;
-
 	}
 	.container-fluid{
 		color: #000000 !important;
@@ -110,12 +117,16 @@
 		font-family: 'Great Vibes', cursive;
 		color: #000080 !important;
 		font-size: 18px
+		
 	}
 	.new-style-bodhi{
 		font-family: 'Rock Salt', cursive;
 		color: #000000 !important
 		text-shadow: 10px 15px #ff0000;
 		text-align: left;
+	}
+	.animated{
+		.jello
 	}
 	.slideanim {visibility:hidden;}
   	.slide {
@@ -224,7 +235,7 @@
 
 	<div id="About" class="container-fluid">
 		<div class="container-after-grey"></br></br></br>
-  			<div class="about-page">
+  			<div class="about-page animated bounceInUp">
       			<h2>About the College</h2><br>
       			<p>Viswajyothi is the lamp of God which brings light to the whole world. It aims to convey glow for the whole world and to bring all to radiance from darkness. "Service of GOD through service of Humanity' is the driving motto of the Kothamangalam Diocese. Viswajyothi College of Engineering & Technology is yet another hallmark of the commitment and experience of the Kothamangalam Diocese in the field of education. With 90 schools, 3 affiliated Colleges and 3 other technical institutions under its Management, Kothamangalam Diocese always have been in the forefront in serving the society and the cause of education for the last 5 decades. Behind each of its famed educational institutions, are the unflagging efforts of the people of the Diocese.
 
@@ -235,38 +246,53 @@
 <div id="Events" class="container-fluid bg-3 text-center">    
 <div class="about-page"></br></br></br>
   <h3>EVENTS</h3></br>
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-  </div>
-</div><br>
+<div class="row">
+    <div class="col-md-12">
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <div id="mdb-lightbox-ui"></div>
+
+        <div class="mdb-lightbox no-margin">
+
+
+            <figure class="col-md-4">
+                    <img src="./images/placeholder.jpg" class="img-fluid">             
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+            <figure class="col-md-4">
+                <img src="./images/placeholder.jpg" class="img-fluid">
+            </figure>
+
+        </div>
+
     </div>
-    <div class="col-sm-3"> 
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
 </div><br><br>
 
 	<div id="Contact" class="container-fluid bg-grey"></br></br>
@@ -296,15 +322,15 @@
     </script>
 
 	<footer class="container-fluid text-center">
-  		<a href="#Home" title="To Top">
-    		<span class="glyphicon glyphicon-chevron-up"></span>
+  		<a href="#Home" title="To Top" class="container-fluid">
+    		<span class="glyphicon glyphicon-chevron-up animated rubberBand"></span>
   		</a>
 	</footer>
 
 
 	<script>
 		$(document).ready(function(){
-  			$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  			$(".navbar a, footer a[href='#Home']").on('click', function(event) {
     		if (this.hash !== "") {
       			event.preventDefault();
       			var hash = this.hash;
