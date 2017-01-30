@@ -129,6 +129,10 @@
   		font-family: 'Noticia Text', serif;
   		text-align: center;
   	}
+  	#map {
+        height: 400px;
+        width: 100%;
+    }
   	@keyframes slide {
     	0% {
       		opacity: 0;
@@ -228,20 +232,42 @@
       		</div>  			
   		</div>
 	</div>
+<div id="Events" class="container-fluid bg-3 text-center">    
+<div class="about-page">
+  <h3>EVENTS</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+  </div>
+</div><br>
 
-	<div id="Events" class="container-fluid bg-grey">
-  		<div class="row"></br></br></br>
-    		<div class="col-sm-4">
-      			<span><img src="./images/cs.jpeg" height="450" width="450"></span>
-      			<span><img src="./images/electrical.jpeg" height="300" width="300"></span>
-    		</div>
-    		<div class="col-sm-8">
-      		<h2>EVENTS</h2><br>
-      		<h4><strong>XXXX:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</h4><br>
-      		<p><strong>YYYY:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-    		</div>
-    	</div>
-	</div>
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <img src="./images/placeholder.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
 
 	<div id="Contact" class="container-fluid bg-grey"></br></br>
   		<h2 class="text-center">CONTACT</h2>
@@ -251,13 +277,12 @@
       		<p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     	</div>
 	</div>
-	<div id="googleMap" style="height:400px;width:100%;"></div>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script>
+	<div id="map"></div>
+    <script>
       function initMap() {
         var uluru = {lat: 9.9511, lng: 76.6306};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 16,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -269,7 +294,6 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVHiJV7c87Cpn13QAmR5ZLQKJmg2YlvpM&callback=initMap">
     </script>
-	
 	<footer class="container-fluid text-center">
 		<div class="footer">
   			<p align="center">Praise to the Almighty</p>
