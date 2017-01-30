@@ -104,11 +104,11 @@
   	}
 	.footer-font{
 		font-family: 'Cookie', cursive;
-		color: #f4511e !important;
+		color: #000080 !important;
 	}
 	.footer{
 		font-family: 'Great Vibes', cursive;
-		color: #f4511e !important;
+		color: #000080 !important;
 		font-size: 18px
 	}
 	.new-style-bodhi{
@@ -192,13 +192,13 @@
 
 
 	<div class="jumbotron text-center">
-		<div id="Home" class="carousel slide" data-ride="carousel"></br></br></br>
+		<div id="Home" class="carousel slide" data-ride="carousel">
 	  		<!--<ol class="carousel-indicators">
 	    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 	    		<li data-target="#myCarousel" data-slide-to="1"></li>
 	    	</ol>-->
 		  	<div class="carousel-inner" role="listbox">
-	    	  	<div class="item active">
+	    	  	<div class="item active"></br></br></br>
 	      			<img src="./images/BodhiOrange.png" alt="bodhi">
 	    		</div>
 	    		<!--<div class="item">
@@ -233,7 +233,7 @@
   <div class="row"></br></br></br></br>
     <div class="col-sm-4">
       <span><img src="./images/cs.jpeg" height="450" width="450"></span>
-      <span><img src="./images/electrical.jpg" height="300" width="300"></span>
+      <span><img src="./images/electrical.jpeg" height="300" width="300"></span>
     </div>
     <div class="col-sm-8">
       <h2>EVENTS</h2><br>
@@ -242,6 +242,45 @@
     </div>
   </div>
 </div>
+<div id="Contact" class="container-fluid bg-grey"></br></br></br>
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row" align="center">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Vazhakulam, Kerala</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+</div>
+<div id="googleMap" style="height:400px;width:100%;">
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.793281193149!2d76.62843194969078!3d9.951150276570536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07dd2f387bbce7%3A0x33c9780276b797b6!2sViswajyothi+College+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1485776194591" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(9.9511, 76.6306);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+map:map,
+title: 'Viswajyothi College of Engineering and Technology'
+  });
+
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 
 	<footer class="container-fluid text-center">
 		<div class="footer">
