@@ -4,6 +4,7 @@
 	<title>BODHI 2k17</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="Soolu Thomas" name="author">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./animate.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -57,9 +58,12 @@
       	font-weight: 400;
       	margin-bottom: 30px;
   	}
-  	  html, body {
+  	html, body {
         max-width: 100%;
-        overflow-x: hidden;
+        overflow-x: none;
+    }
+    body{
+    	width: 100vw;
     }
 	.carousel-inner > .item > img,
 	.carousel-inner > .item > a > img {
@@ -295,18 +299,18 @@
     @media only screen and (max-width: 767px) {
     .timeline > li:nth-child(even) {
     margin-bottom: 0px;
-    min-height: 0px;
+    min-height: auto;
     right: 0px;
   }
   .timeline > li:nth-child(odd) {
     margin-bottom: 0px;
-    min-height: 0px;
+    min-height: auto;
     left: 0px;
   }
   .timeline>li .timeline-image {
     position: static;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin-bottom:0px;
   }
   .timeline>li:nth-child(even) .timeline-image {
@@ -332,6 +336,12 @@
     #story,#storymenu {
         display: none;
     }
+}
+#bug{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+
 }
   	@keyframes slide {
     	0% {
@@ -368,14 +378,15 @@
         	font-size: 150px;
     	}
   	}
+
   	</style>
   	<link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
 </head>
 
 <body id="page-top" class="index">
-<div>
-	overflow-x: hidden;
-</div>
+
+
+
 <nav class="navbar navbar-default navbar-fixed-top ">
   		<div class="container-fluid">
     		<div class="navbar-header">
@@ -407,6 +418,7 @@
 	    	</div>
 		</div>
 	</div>
+
 
 
 	<div id="About" class="container-fluid">
@@ -752,7 +764,7 @@
     </script>
 
 	<footer class="container-fluid text-center">
-	<div class="animated rubberBand infinite">
+	<div id="bug" class="animated rubberBand infinite">
   		<a href="#page-top" title="To Top" class="container-fluid">
     		<span class="glyphicon glyphicon-chevron-up animated rubberBand"></span>
   		</a>
